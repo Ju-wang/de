@@ -1,0 +1,15 @@
+<style>
+    body {text-align: center;}
+</style>
+
+<body>
+    <h1>Today's visit</h1>
+
+    {% for visit in visiters %}
+        <a href="{% url 'detail' visit.id %}"><h3>{{ visit.title }}</h3></a>
+        {{ visit.created_at }}
+    {% endfor %}
+    <br><br>
+    <a href="{% url 'new' %}"><input type="button" value="방명록 작성"></a>
+    <a href="{% url 'main' %}"><input type="button" value="메인으로"></a>
+</body>

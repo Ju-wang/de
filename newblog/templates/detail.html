@@ -1,0 +1,20 @@
+<style>
+    body{text-align: center;}
+</style>
+
+
+<body>
+    <h1>Each visit & Write comment</h1>
+    {{ visit.id }}
+
+    <h3>{{ visit.title }}</h3>
+    {{ visit.created_at }}
+
+    <!-- views.py detail의 visit -->
+    {% for comment in visit.comment.all %}
+        <h3>{{ comment.comment }}</h3>
+        {{ comment.name }}
+    {% endfor %}
+    <br><br>
+    <a href="{% url 'add_comment' visit.id %}"><input type="submit" value="댓글 쓰러 가기"></a>
+ 

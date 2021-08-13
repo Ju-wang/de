@@ -1,0 +1,12 @@
+<style>
+    body{text-align: center;}
+</style>
+
+<body>
+    <h1>Write Comment</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}<br>
+        <input type="submit" value="댓글 달기">
+    </form>
+</body>

@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-width: 1000px;
+}
+
+#header {
+    height: 101px;
+    background-color:whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom-width: 3px;
+    border-bottom-style: double;
+    border-bottom-color: grey;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#profile {
+    height: 586px;
+    background-color: whitesmoke;
+    margin-top: 101px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu-list .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+}
+
+.face {
+    width: 400px;
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    left: 900px;
+    
+}
+
+.personal-info {
+    position: relative;
+    bottom: 280px;
+    left: 280px;
+    font-size: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    line-height: 0.5em;
+}
+
+#greet {
+    height: 700px;
+    background-color: gainsboro;
+    border-top-width: 3px;
+    border-top-style: double;
+    border-top-color: grey;
+}
+
+.contact-info {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-tool {
+    position: relative;
+    left: 690px;
+    margin-top: 70px;
+}
+
+.more-info {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    margin-top: 50px;
+    display: inline-flex;
+    padding-left: 200px;
+    position: relative;
+    right: 90px;
+    
+}
+
+.card-title {
+    font-weight: lighter;
+}
+
+.card-body-1 {
+    margin-left: 50px;
+}
+
+.card-body-2 {
+    margin-left: 50px;
+}
+

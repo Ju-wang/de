@@ -1,0 +1,72 @@
+{% load static %}
+
+<html>
+<head>
+    <link href="{% static 'layout.css' %}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<section id="header">
+    <div class="logo">안녕하세요. 이주왕입니다!</div>
+    <div class="menu-list">
+        <div class="menu">
+            <a href="#">Life</a>
+            <a href="#">Vision</a>
+            <a href="#">Contact</a>
+            <a href="{% url 'visiter' %}">Visit</a>
+        </div>
+    </div>
+</section>
+
+<section id="profile">
+    <img class="face" src="{% static '이미지.png' %}"/>
+    <div class="personal-info">
+        <p>HELLO,</p>
+        <p>MY NAME IS</p>
+        <p><span style="color:darkmagenta" style="font-weight: bold;">LEE JU WANG</span></p>
+    </div>
+</section>
+
+<section id="greet">
+    <div class="contact-info">
+        <h3>HOW TO CONTACT</h3>
+    </div>
+    <div class="contact-tool">
+        <img class="option" src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp"/>
+        <img class="option" src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp"/>
+        <img class="option" src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/01ab6619093f45388d66736ec22e5885.webp"/>
+        <img class="option" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp"/>
+    </div>
+    <div class="more-about">
+        <div class="more-info">
+            <h3>MORE ABOUT ME</h3>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img" src="{% static 'IMG_2595.PNG' %}"/>
+                        <div class="card-body">
+                            <h5 class="card-title">DEPERTMENT</h5>
+                            <p class="card-text">International Business Administration</p>
+                        </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img" src="{% static 'IMG_2596.PNG' %}"/>
+                        <div class="card-body-1">
+                            <h5 class="card-title">TENDENCY</h5>
+                            <p class="card-text">Outgoing, Responsible</p>
+                        </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img" src="{% static 'IMG_2597.PNG' %}"/>
+                        <div class="card-body-2">
+                            <h5 class="card-title">My GOAL</h5>
+                            <p class="card-text">Hard Work, Do Ones Best</p>
+                        </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
